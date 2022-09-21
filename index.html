@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable-Columns</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table cellspacing="0">
+        <thead>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <div id="controls">
+        <button onclick="importData()" class="import">Importar</button>
+        <button class="controls-add export" onclick="exportData()" class="export">Exportar</button>
+        <div class="controls-add">
+            |
+        </div>
+        <button class="controls-add add" onclick="addData()" class="add">Adicionar Linha</button>
+        <button class="controls-add add" onclick="addData()" class="add">Adicionar Objeto</button>
+    </div>
+    <input onchange="importDataFile(event)" type="file" id="importData" style="display: none" accept="application/json">
+</body>
+<script src="script.js"></script>
+</html>

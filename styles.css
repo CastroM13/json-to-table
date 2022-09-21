@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+  }
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.123);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.315);
+}
+
+thead {
+    background: rgb(44 44 44);
+    color: white;
+}
+thead > td {
+    padding: 1em;
+}
+
+tbody > tr > td, div {
+    padding: 1em;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+button {
+    background: #2c2c2c;
+    color: white;
+    padding: 0.75em;
+    border-radius: 100px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.delete {
+    background: #fd5151;
+}
+
+.action {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 50px;
+    border: 1px solid #2c2c2c;
+}
+
+.center {
+    text-align: center;
+}
+
+#controls {
+    color: white;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    background: rgb(44 44 44);
+    align-items: center;
+}
+
+#controls > button {
+    margin: 1em;
+}
+
+.import {
+    background-color: #5162d3;
+}
+
+.export {
+    background-color: #62c178;
+}
+
+.alert {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.add {
+    background: white;
+    color: black;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background: #0000004d;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: rgb(255, 255, 255);
+    width: max-content;
+    height: max-content;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.modal > .header {
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal > .header > span:last-child {
+    cursor: pointer;
+    color: rgb(216, 56, 56);
+}
+
+.modal > .footer {
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.modal > .footer > button:first-child {
+    margin-left: 1em;
+}
